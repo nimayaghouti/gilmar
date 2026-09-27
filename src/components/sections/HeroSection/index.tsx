@@ -18,7 +18,6 @@ export default function HeroSection() {
         position: 'relative',
         minHeight: { xs: 760, md: 960 },
         overflow: 'hidden',
-        bgcolor: 'background.default',
       }}
     >
       <HeroBackground />

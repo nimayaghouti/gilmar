@@ -1,13 +1,20 @@
+// src/components/ui/CtaButton.tsx
 import Box from '@mui/material/Box';
 import Button, { ButtonProps } from '@mui/material/Button';
 
-import AppIcon from './AppIcon';
+import ArrowIcon from '../icons/ArrowIcon';
 
 interface CtaButtonProps extends Omit<ButtonProps, 'children'> {
   label: string;
+  iconSize?: number;
 }
 
-export default function CtaButton({ label, sx, ...props }: CtaButtonProps) {
+export default function CtaButton({
+  label,
+  sx,
+  iconSize = 24,
+  ...props
+}: CtaButtonProps) {
   return (
     <Button
       variant="contained"
@@ -59,7 +66,7 @@ export default function CtaButton({ label, sx, ...props }: CtaButtonProps) {
           boxShadow: 'inset 0 0 0 1px rgba(0,0,0,0.03)',
         }}
       >
-        <AppIcon name="akar-icons:arrow-left" width={20} height={20} />
+        <ArrowIcon size={iconSize} />
       </Box>
     </Button>
   );
