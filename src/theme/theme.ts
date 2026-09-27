@@ -12,8 +12,8 @@ declare module '@mui/material/styles' {
         badge: string;
       };
       neutrals: {
-        n7: string; // #F4F5F6
-        n8: string; // #FCFCFD
+        n7: string;
+        n8: string;
       };
       accent: {
         pink: string;
@@ -24,6 +24,7 @@ declare module '@mui/material/styles' {
         lilac: string;
       };
       shadows: {
+        halo: string;
         photoCard: string;
         photoCardInset: string;
         depth3: string;
@@ -41,6 +42,15 @@ export const theme = createTheme({
   direction: 'rtl',
   palette: {
     mode: 'light',
+    primary: {
+      main: '#26E05A',
+      contrastText: '#ffffff',
+    },
+
+    secondary: {
+      main: '#02ADF7',
+      contrastText: '#ffffff',
+    },
     text: {
       primary: '#1a1a1a',
       secondary: '#4c4c4d',
@@ -49,15 +59,13 @@ export const theme = createTheme({
       default: '#ffffff',
       paper: '#fcfdfd',
     },
-    primary: { main: '#26E05A', contrastText: '#ffffff' },
-    secondary: { main: '#02ADF7', contrastText: '#ffffff' },
     divider: '#eef3f6',
   },
   shape: {
     borderRadius: 16,
   },
   typography: {
-    fontFamily: abarMidFaNum.style.fontFamily,
+    fontFamily: `${abarMidFaNum.style.fontFamily}, Arial, sans-serif`,
     h1: {
       fontSize: '40px',
       fontWeight: 800,
@@ -126,6 +134,7 @@ export const theme = createTheme({
       lilac: '#DCB9F0',
     },
     shadows: {
+      halo: '0px 0px 0px 6px #ffffff',
       photoCard: '0px 24px 48px rgba(0,46,37,0.12)',
       photoCardInset: 'inset 0px 10px 30px rgba(0,0,0,0.32)',
       depth3: '0px 40px 32px -24px rgba(15,15,15,0.12)',
