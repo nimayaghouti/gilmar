@@ -63,6 +63,8 @@ export default function Services() {
         px: { xs: 2, sm: 4, md: 10 },
         pb: { xs: 8, md: 12 },
         overflowX: 'hidden',
+        maxWidth: '1440px',
+        mx: 'auto',
       }}
     >
       <Stack
