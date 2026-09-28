@@ -1,5 +1,6 @@
 import AboutUs from '@/components/sections/AboutUs';
 import Blogs from '@/components/sections/Blogs';
+import Faq from '@/components/sections/Faq';
 import HeroSection from '@/components/sections/HeroSection';
 import Packages from '@/components/sections/Packages';
 import Residence from '@/components/sections/Residence';
@@ -20,6 +21,7 @@ export default function Home() {
       <Testimonials />
       <Packages />
       <Blogs />
+      <Faq />
     </main>
   );
 }
