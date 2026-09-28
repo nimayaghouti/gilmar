@@ -3,6 +3,7 @@ import HeroSection from '@/components/sections/HeroSection';
 import Residence from '@/components/sections/Residence';
 import Rules from '@/components/sections/Rules';
 import Services from '@/components/sections/Services';
+import Testimonials from '@/components/sections/Testimonials';
 import VideoTour from '@/components/sections/VideoTour';
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <Services />
       <Residence />
       <VideoTour />
+      <Testimonials />
     </main>
   );
 }
