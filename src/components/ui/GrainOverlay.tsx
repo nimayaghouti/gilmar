@@ -31,7 +31,7 @@ export default function GrainOverlay() {
           <feColorMatrix
             in="noise"
             type="matrix"
-            values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.5 0"
+            values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .2 0"
           />
         </filter>
       </svg>

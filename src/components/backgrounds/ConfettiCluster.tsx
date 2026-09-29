@@ -1,45 +1,46 @@
 export default function ConfettiCluster() {
   return (
     <svg
-      width="508"
-      height="600"
-      viewBox="0 0 508 600"
+      width="620"
+      height="642"
+      viewBox="0 0 620 642"
       fill="none"
+      overflow="visible"
       xmlns="http://www.w3.org/2000/svg"
     >
       <rect
         width="12"
         height="12"
         rx="4"
-        transform="matrix(-0.965926 -0.258819 -0.258819 0.965926 14.697 3.10571)"
+        transform="matrix(-0.965926 -0.258819 -0.258819 0.965926 120 50)"
         fill="#FABDC1"
       />
       <rect
         width="8"
         height="8"
         rx="2"
-        transform="matrix(0.939693 -0.34202 -0.34202 -0.939693 48.736 89.2542)"
+        transform="matrix(0.939693 -0.34202 -0.34202 -0.939693 140.909 120.027)"
         fill="#9AC8FF"
       />
       <rect
         width="12"
         height="12"
         rx="2"
-        transform="matrix(0.939693 -0.34202 -0.34202 -0.939693 496.103 192.381)"
+        transform="matrix(0.939693 -0.34202 -0.34202 -0.939693 470.314 186.89)"
         fill="#CDB4DB"
       />
       <rect
         width="8"
         height="8"
         rx="2"
-        transform="matrix(0.939693 -0.34202 -0.34202 -0.939693 469.736 246.254)"
+        transform="matrix(0.939693 -0.34202 -0.34202 -0.939693 445.709 240.727)"
         fill="#92A5EF"
       />
       <rect
         width="8"
         height="8"
         rx="2"
-        transform="matrix(0.939693 -0.34202 -0.34202 -0.939693 149.736 599.254)"
+        transform="matrix(0.939693 -0.34202 -0.34202 -0.939693 217.509 490.927)"
         fill="#FFD166"
       />
     </svg>
