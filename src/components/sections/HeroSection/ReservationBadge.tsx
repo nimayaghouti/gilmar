@@ -13,6 +13,8 @@ const AVATARS = [
 const AVATAR_SIZE = 32;
 const AVATAR_OVERLAP = 18;
 
+const BELOW_1300 = '@media (max-width: 1299.95px)';
+
 export default function ReservationBadge() {
   return (
     <Stack
@@ -30,6 +32,12 @@ export default function ReservationBadge() {
         bgcolor: '#fcfdfd',
         borderRadius: 9999,
         boxShadow: theme => theme.brand.shadows.halo,
+        [BELOW_1300]: {
+          position: 'static',
+          bottom: 'auto',
+          insetInlineEnd: 'auto',
+          zIndex: 'auto',
+        },
       }}
     >
       <Box

@@ -3,6 +3,8 @@
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 
+const BELOW_1300 = '@media (max-width: 1299.95px)';
+
 export default function HeroCaption() {
   return (
     <Box
@@ -17,6 +19,16 @@ export default function HeroCaption() {
         display: 'flex',
         alignItems: 'center',
         borderRadius: '24px 24px 0 24px',
+        [BELOW_1300]: {
+          position: 'static',
+          bottom: 'auto',
+          zIndex: 'auto',
+          width: 'auto',
+          maxWidth: '100%',
+          minHeight: 'unset',
+          px: 0,
+          py: 0,
+        },
       }}
     >
       <Typography
@@ -28,6 +40,7 @@ export default function HeroCaption() {
           fontWeight: 600,
           lineHeight: '28px',
           textAlign: 'right',
+          [BELOW_1300]: { textAlign: 'center' },
         }}
       >
         فرار از شلوغی شهر و تجربه‌ی اقامتی اصیل در دل طبیعت شمال
