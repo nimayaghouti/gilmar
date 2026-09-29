@@ -47,7 +47,7 @@ export default function Rules() {
         maxWidth: 1280,
         mx: 'auto',
         px: { xs: 3, md: 5 },
-        pb: { xs: 8, md: 12 },
+        py: { xs: 8, md: 0 },
       }}
     >
       <Stack

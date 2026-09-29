@@ -64,7 +64,8 @@ export default function AboutUs() {
         maxWidth: 1280,
         mx: 'auto',
         px: { xs: 3, md: 5 },
-        py: { xs: 8, md: 12 },
+        pt: { xs: 8, md: 4 },
+        pb: { xs: 8, md: 0 },
       }}
     >
       <Stack

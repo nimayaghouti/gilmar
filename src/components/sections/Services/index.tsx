@@ -61,7 +61,7 @@ export default function Services() {
       component="section"
       sx={{
         px: { xs: 2, sm: 4, md: 10 },
-        pb: { xs: 8, md: 12 },
+        py: { xs: 8, md: 16 },
         overflowX: 'hidden',
         maxWidth: '1440px',
         mx: 'auto',

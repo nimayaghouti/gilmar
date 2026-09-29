@@ -42,7 +42,7 @@ export default function Faq() {
           maxWidth: 1440,
           px: { xs: 3, md: 0 },
           pt: 2,
-          pb: { xs: 10, md: 12 },
+          pb: { xs: 10, md: 11 },
           position: 'relative',
         }}
       >

@@ -54,7 +54,7 @@ export default function Footer() {
           mx: 'auto',
           width: '100%',
           px: { xs: 3, md: 0 },
-          pt: { xs: 6, md: 8 },
+          pt: { xs: 6, md: 1 },
           pb: { xs: 6, md: 4 },
           position: 'relative',
           overflow: 'hidden',
