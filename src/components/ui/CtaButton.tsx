@@ -1,4 +1,3 @@
-// src/components/ui/CtaButton.tsx
 import Box from '@mui/material/Box';
 import Button, { ButtonProps } from '@mui/material/Button';
 
