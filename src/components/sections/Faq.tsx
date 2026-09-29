@@ -42,7 +42,7 @@ export default function Faq() {
           maxWidth: 1440,
           px: { xs: 3, md: 0 },
           pt: 2,
-          pb: { xs: 10, md: 12 },
+          pb: { xs: 10, md: 11 },
           position: 'relative',
         }}
       >
@@ -77,7 +77,7 @@ export default function Faq() {
             spacing={2}
             sx={{ width: { xs: '100%', md: 620 }, textAlign: 'right' }}
           >
-            <Box sx={{ alignSelf: 'flex-start' }}>
+            <Box sx={{ alignSelf: { xs: 'center', md: 'flex-start' } }}>
               <IconContainer>
                 <QuestionCircleGlyph />
               </IconContainer>

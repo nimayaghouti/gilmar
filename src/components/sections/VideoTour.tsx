@@ -62,7 +62,7 @@ export default function VideoTour() {
             order: { xs: 1, md: 'unset' },
           }}
         >
-          <Box sx={{ alignSelf: 'flex-start', mb: 1 }}>
+          <Box sx={{ alignSelf: { xs: 'center', md: 'flex-start' }, mb: 1 }}>
             <IconContainer>
               <ClapperboardPlayGlyph />
             </IconContainer>
@@ -192,7 +192,7 @@ export default function VideoTour() {
             position: 'absolute',
             width: { xs: 110, md: 140 },
             height: 'auto',
-            left: '55%',
+            left: { xs: '80%', md: '55%' },
             bottom: { xs: 8, md: '9%' },
             transform: 'translateX(-50%)',
             pointerEvents: 'none',

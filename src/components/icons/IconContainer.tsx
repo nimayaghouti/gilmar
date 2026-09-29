@@ -1,11 +1,17 @@
 import Box from '@mui/material/Box';
-import { ReactNode } from 'react';
+import { ReactNode, useId } from 'react';
 
 interface IconContainerProps {
   children: ReactNode;
 }
 
+const BADGE_FILL = '#ECFCEF';
+
 export default function IconContainer({ children }: IconContainerProps) {
+  const uid = useId().replace(/:/g, '');
+  const filterId = `badge-filter-${uid}`;
+  const clipId = `badge-clip-${uid}`;
+
   return (
     <Box sx={{ position: 'relative', width: 92, height: 60, flexShrink: 0 }}>
       <svg
@@ -15,9 +21,18 @@ export default function IconContainer({ children }: IconContainerProps) {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         style={{ position: 'absolute', inset: 0 }}
+        aria-hidden="true"
       >
-        <g filter="url(#filter0_d_484_357)">
-          <g clipPath="url(#clip0_484_357)">
+        <g filter={`url(#${filterId})`}>
+          <g clipPath={`url(#${clipId})`}>
+            <rect
+              x="4"
+              y="4"
+              width="84"
+              height="52"
+              rx="26"
+              fill={BADGE_FILL}
+            />
             <line
               x1="4.24649"
               y1="29.569"
@@ -71,7 +86,7 @@ export default function IconContainer({ children }: IconContainerProps) {
         </g>
         <defs>
           <filter
-            id="filter0_d_484_357"
+            id={filterId}
             x="0"
             y="0"
             width="92"
@@ -90,7 +105,7 @@ export default function IconContainer({ children }: IconContainerProps) {
               radius="4"
               operator="dilate"
               in="SourceAlpha"
-              result="effect1_dropShadow_484_357"
+              result="effect1_dropShadow"
             />
             <feOffset />
             <feComposite in2="hardAlpha" operator="out" />
@@ -101,16 +116,16 @@ export default function IconContainer({ children }: IconContainerProps) {
             <feBlend
               mode="normal"
               in2="BackgroundImageFix"
-              result="effect1_dropShadow_484_357"
+              result="effect1_dropShadow"
             />
             <feBlend
               mode="normal"
               in="SourceGraphic"
-              in2="effect1_dropShadow_484_357"
+              in2="effect1_dropShadow"
               result="shape"
             />
           </filter>
-          <clipPath id="clip0_484_357">
+          <clipPath id={clipId}>
             <rect x="4" y="4" width="84" height="52" rx="26" fill="white" />
           </clipPath>
         </defs>

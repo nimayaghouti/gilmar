@@ -139,7 +139,7 @@ export default function Packages() {
               zIndex: 2,
             }}
           >
-            <Box sx={{ alignSelf: 'flex-start' }}>
+            <Box sx={{ alignSelf: { xs: 'center', md: 'flex-start' } }}>
               <IconContainer>
                 <BoxMinimalisticGlyph />
               </IconContainer>

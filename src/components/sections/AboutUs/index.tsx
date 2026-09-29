@@ -64,7 +64,8 @@ export default function AboutUs() {
         maxWidth: 1280,
         mx: 'auto',
         px: { xs: 3, md: 5 },
-        py: { xs: 8, md: 12 },
+        pt: { xs: 8, md: 4 },
+        pb: { xs: 8, md: 0 },
       }}
     >
       <Stack
@@ -102,7 +103,7 @@ export default function AboutUs() {
               zIndex: 1,
               display: 'flex',
               flexDirection: 'column',
-              alignItems: 'flex-start',
+              alignItems: { xs: 'center', md: 'flex-start' },
               gap: 3,
             }}
           >
@@ -170,7 +171,7 @@ export default function AboutUs() {
               />
             </Box>
           ))}
-          <Stack direction="row" spacing={1.5} sx={{ flexWrap: 'wrap' }}>
+          <Stack direction="row" sx={{ flexWrap: 'wrap', gap: 1.5 }}>
             <NameTagChip label={CHIP_ONE} icon={<LodgeIcon size={22} />} />
             <NameTagChip label={CHIP_TWO} icon={<MagicStickIcon size={20} />} />
           </Stack>
