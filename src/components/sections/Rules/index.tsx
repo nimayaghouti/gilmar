@@ -92,6 +92,7 @@ export default function Rules() {
             position: 'relative',
             zIndex: 1,
             justifyContent: 'center',
+            alignItems: 'center',
             gap: 16,
           }}
         >

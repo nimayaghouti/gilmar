@@ -102,7 +102,7 @@ export default function Services() {
             sx={{
               position: 'relative',
               zIndex: 1,
-              alignItems: 'flex-start',
+              alignItems: { xs: 'center', md: 'flex-start' },
             }}
           >
             <IconContainer>

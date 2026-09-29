@@ -192,7 +192,7 @@ export default function Footer() {
               mt: 3,
               bgcolor: 'background.paper',
               border: `1px solid ${theme.palette.divider}`,
-              borderRadius: '9999px',
+              borderRadius: { xs: 2, md: '9999px' },
               boxShadow: theme.brand.shadows.halo,
               px: 3,
               py: 2,
